@@ -14,11 +14,11 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
-end
 
-# Stylesheets
-gem 'bourbon'
-gem 'neat'
+  gem 'bourbon'
+  gem 'neat'
+  gem 'normalize-rails'
+end
 
 # Javascript Gems
 gem 'jquery-rails'

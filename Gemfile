@@ -37,6 +37,10 @@ group :test, :development do
   gem 'ffaker'
 end
 
+group :test do
+  gem 'shoulda-matchers'
+end
+
 group :development do
   gem 'better_errors'
   gem "binding_of_caller"

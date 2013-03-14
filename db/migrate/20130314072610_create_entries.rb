@@ -1,0 +1,11 @@
+class CreateEntries < ActiveRecord::Migration
+  def change
+    create_table :entries do |t|
+      t.text :body
+      t.references :user
+
+      t.timestamps
+    end
+    add_index :entries, :user_id
+  end
+end

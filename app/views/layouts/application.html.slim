@@ -7,5 +7,7 @@ html
     = javascript_include_tag "application"
     = csrf_meta_tags
   body
+    header
+      = render :partial => 'layouts/display_flash'
     section
       = yield

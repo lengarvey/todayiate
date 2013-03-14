@@ -33,4 +33,11 @@ group :test, :development do
   gem "rspec-rails", "~> 2.0"
   gem 'capybara'
   gem 'poltergeist'
+  gem 'machinist'
+  gem 'ffaker'
+end
+
+group :development do
+  gem 'better_errors'
+  gem "binding_of_caller"
 end

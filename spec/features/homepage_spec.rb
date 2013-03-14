@@ -14,6 +14,8 @@ describe 'the homepage', :type => :feature do
     let(:user) { User.make! }
 
     it 'should allow people to log in' do
+      click_link 'Sign in'
+      page.status_code.should == 200
     end
   end
 
@@ -22,10 +24,19 @@ describe 'the homepage', :type => :feature do
       sign_in
     end
 
+    it 'should greet the logged in user' do
+      page.should have_content 'Hello'
+    end
+
+    it 'should allow people to sign out' do
+      click_link 'Sign out'
+    end
+
     it 'should let allow a user to enter a food log' do
-      fill_in 'Log', :with => 'A cheese burger, fries and a 200ml coke'
-      click_button 'Submit'
-      page.status_code.should == 200
+      pending
+      # fill_in 'Log', :with => 'A cheese burger, fries and a 200ml coke'
+      # click_button 'Submit'
+      # page.status_code.should == 200
     end
 
   end

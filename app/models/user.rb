@@ -5,4 +5,8 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me
 
   has_many :entries
+
+  def guest?
+    false
+  end
 end

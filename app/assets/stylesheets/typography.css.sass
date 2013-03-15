@@ -2,12 +2,19 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote,th,t
   margin: 0
   padding: 0
 
+a
+  color: #ddd
+  text-decoration: none
+  &:hover
+    text-decoration: underline
+
 body
   color: white
   font-family: 'Lato', sans-serif
   font-size: $base-font-size
   *
     font-family: 'Lato', sans-serif
+    font-weight: 300
 p
   font-size: 1em
 
@@ -16,3 +23,7 @@ h1
 i
   font-style: normal
   font-weight: 200
+
+.home
+  h1
+    text-align: right

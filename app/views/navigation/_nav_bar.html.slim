@@ -1,7 +1,10 @@
-- if @current_user.guest?
-  = link_to 'Sign in', new_user_session_path
-  = link_to 'Register', new_user_registration_path
-- else
-  ' Hello
-  =' @current_user.name
-  = link_to 'Sign out', destroy_user_session_path, :method => :delete
+nav
+  = link_to 'Home', '#'
+  = link_to 'About', '#'
+  = link_to 'Github', 'https://github.com/lengarvey/todayiate'
+  - if @current_user.guest?
+    = link_to 'Sign in', new_user_session_path
+    = link_to 'Register', new_user_registration_path
+  - else
+    = link_to "Hello #{@current_user.name}", '#'
+    = link_to 'Sign out', destroy_user_session_path, :method => :delete

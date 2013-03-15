@@ -4,3 +4,27 @@ $base-line-height: 1.42857em
 body
   background: image-url('meal_background.jpg') no-repeat center center fixed
   @include background-size(cover)
+
+header
+  // background-color: #FF324B
+  padding: 2em 0
+
+  nav
+    text-align: right
+    float: right
+    a
+      margin: 1em
+section
+  &.main
+    background-color: transparent
+    min-height: 600px
+  background-color: $light-color
+  min-height: 400px
+header
+  section
+    background-color: transparent
+    min-height: auto
+footer
+  min-height: 200px
+  background-color: $dark-light
+

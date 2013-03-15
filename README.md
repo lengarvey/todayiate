@@ -1,7 +1,7 @@
 Today I ate
 ===========
 
-[![Build Status](https://travis-ci.org/[lengarvey]/[todayiate].png)](https://travis-ci.org/[lengarvey]/[todayiate])
+[![Build Status](https://travis-ci.org/lengarvey/todayiate.png)](https://travis-ci.org/lengarvey/todayiate)
 
 A fun Rails sideproject that I'm building to scratch my own itch.
 

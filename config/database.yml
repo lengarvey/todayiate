@@ -43,7 +43,7 @@ test:
   encoding: unicode
   database: todayiate_test
   pool: 5
-  username: todayiate
+  username: postgres
 
 production:
   adapter: postgresql

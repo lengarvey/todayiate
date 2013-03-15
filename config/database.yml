@@ -44,7 +44,6 @@ test:
   database: todayiate_test
   pool: 5
   username: todayiate
-  password:
 
 production:
   adapter: postgresql

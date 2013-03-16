@@ -1,5 +1,5 @@
 Todayiate::Application.routes.draw do
-  resources :entries
+  resources :meals
 
 
   devise_for :users

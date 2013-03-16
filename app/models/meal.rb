@@ -1,4 +1,4 @@
-class Entry < ActiveRecord::Base
+class Meal < ActiveRecord::Base
   belongs_to :user
   attr_accessible :body
 

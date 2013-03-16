@@ -4,3 +4,5 @@
       i Track your meals
   aside
     input type="text"
+  - unless current_user.guest?
+    section= render @meals

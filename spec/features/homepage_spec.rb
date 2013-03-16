@@ -7,7 +7,6 @@ describe 'the homepage', :type => :feature do
 
   it 'should load on a simple get request' do
     page.should have_content('Track your meals')
-    page.should have_content('Share them with others')
   end
 
   context 'for guest users' do
